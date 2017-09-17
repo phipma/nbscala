@@ -198,6 +198,10 @@
             <groupId>org.netbeans.modules</groupId>
             <artifactId>org-netbeans-modules-options-editor</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-modules-csl-types</artifactId>
+        </dependency>
 
         <!-- subproject dependencies -->
         <dependency>
@@ -222,11 +226,15 @@
         </dependency>
         <dependency>
             <groupId>org.netbeans.modules</groupId>
+            <artifactId>org-netbeans-libs-scalariform</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
             <artifactId>org-netbeans-modules-scala-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.netbeans.modules</groupId>
-            <artifactId>org-netbeans-libs-scalariform</artifactId>
+            <artifactId>org-netbeans-modules-scala-fontscolors</artifactId>
         </dependency>
     </dependencies>
 
