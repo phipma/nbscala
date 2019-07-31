@@ -39,6 +39,12 @@
             <email>oliver.guenther [at] gg-net.de</email>
             <timezone>+2</timezone>
         </developer>
+        <developer>
+            <id>phipma</id>
+            <name>Mark Phipps</name>
+            <email>mwgphipps [at] gmail.com</email>
+            <timezone>0</timezone>
+        </developer>
     </developers>
 
     <licenses>
