@@ -49,9 +49,9 @@ import javax.swing.LayoutStyle;
 
 /** Customizer for general project attributes.
  */
-public class CustomizerJar extends JPanel implements HelpCtx.Provider {
+public class CustomizerJar2 extends JPanel implements HelpCtx.Provider {
 
-    public CustomizerJar( J2SEProjectProperties uiProperties ) {
+    public CustomizerJar2( J2SEProjectProperties uiProperties ) {
         initComponents();
 
         distDirField.setDocument(uiProperties.DIST_JAR_MODEL);
@@ -65,7 +65,7 @@ public class CustomizerJar extends JPanel implements HelpCtx.Provider {
     }
 
     public HelpCtx getHelpCtx() {
-        return new HelpCtx( CustomizerJar.class );
+        return new HelpCtx( CustomizerJar2.class );
     }
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -80,20 +80,20 @@ public class CustomizerJar extends JPanel implements HelpCtx.Provider {
         doJarCheckBox = new javax.swing.JCheckBox();
 
         distDirLabel.setLabelFor(distDirField);
-        org.openide.awt.Mnemonics.setLocalizedText(distDirLabel, org.openide.util.NbBundle.getMessage(CustomizerJar.class, "LBL_CustomizeJar_DistDir_JTextField")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(distDirLabel, org.openide.util.NbBundle.getMessage(CustomizerJar2.class, "LBL_CustomizeJar_DistDir_JTextField")); // NOI18N
 
         distDirField.setEditable(false);
 
         excludeLabel.setLabelFor(excludeField);
-        org.openide.awt.Mnemonics.setLocalizedText(excludeLabel, org.openide.util.NbBundle.getMessage(CustomizerJar.class, "LBL_CustomizeJar_Excludes_JTextField")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(excludeLabel, org.openide.util.NbBundle.getMessage(CustomizerJar2.class, "LBL_CustomizeJar_Excludes_JTextField")); // NOI18N
 
         excludeMessage.setLabelFor(excludeField);
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("org/netbeans/modules/scala/project/ui/customizer/Bundle"); // NOI18N
         org.openide.awt.Mnemonics.setLocalizedText(excludeMessage, bundle.getString("LBL_CustomizerJar_ExcludeMessage")); // NOI18N
 
-        org.openide.awt.Mnemonics.setLocalizedText(compressCheckBox, org.openide.util.NbBundle.getMessage(CustomizerJar.class, "LBL_CustomizeJar_Commpres_JCheckBox")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(compressCheckBox, org.openide.util.NbBundle.getMessage(CustomizerJar2.class, "LBL_CustomizeJar_Commpres_JCheckBox")); // NOI18N
 
-        org.openide.awt.Mnemonics.setLocalizedText(doJarCheckBox, org.openide.util.NbBundle.getMessage(CustomizerJar.class, "CustomizerJar.doJarCheckBox")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(doJarCheckBox, org.openide.util.NbBundle.getMessage(CustomizerJar2.class, "CustomizerJar.doJarCheckBox")); // NOI18N
 
         GroupLayout layout = new GroupLayout(this);
         this.setLayout(layout);
@@ -138,9 +138,9 @@ public class CustomizerJar extends JPanel implements HelpCtx.Provider {
                 .addContainerGap(186, Short.MAX_VALUE))
         );
 
-        distDirField.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getBundle(CustomizerJar.class).getString("AD_jTextFieldDistDir")); // NOI18N
-        excludeField.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getBundle(CustomizerJar.class).getString("AD_jTextFieldExcludes")); // NOI18N
-        compressCheckBox.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getBundle(CustomizerJar.class).getString("AD_jCheckBoxCompress")); // NOI18N
+        distDirField.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getBundle(CustomizerJar2.class).getString("AD_jTextFieldDistDir")); // NOI18N
+        excludeField.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getBundle(CustomizerJar2.class).getString("AD_jTextFieldExcludes")); // NOI18N
+        compressCheckBox.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getBundle(CustomizerJar2.class).getString("AD_jCheckBoxCompress")); // NOI18N
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

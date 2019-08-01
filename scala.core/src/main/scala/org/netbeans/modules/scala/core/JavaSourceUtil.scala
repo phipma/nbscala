@@ -76,6 +76,7 @@ import org.netbeans.api.java.source.Task
 import org.openide.filesystems.FileObject
 import org.openide.util.Exceptions
 import scala.reflect.internal.Symbols
+import scala.collection.JavaConverters._
 
 /**
  *
@@ -222,9 +223,10 @@ object JavaSourceUtil {
   @throws(classOf[IOException])
   def getDocComment(info: CompilationInfo, e: Element): String = {
     // to resolve javadoc, only needs Phase.ELEMENT_RESOLVED, and we have reached when create info
-    info.getElementUtilities.javaDocFor(e) match {
-      case null    => ""
-      case javaDoc => javaDoc.getRawCommentText
+    val tp = new TreePath(info.getCompilationUnit)
+    info.getDocTrees.getDocCommentTree(tp).getFirstSentence match {
+      case null        => ""
+      case docTreeList => docTreeList.asScala.mkString("\n")
     }
   }
 

@@ -64,7 +64,7 @@
              we should build it using lower version NetBeans to get it to be able installed both
              on lower and higher version, unless we use un-compatible features of higher version.
         -->
-        <netbeans.version>RELEASE82</netbeans.version>
+        <netbeans.version>RELEASE111</netbeans.version>
 
         <scala.version>2.11.3-nbscala</scala.version> <!-- use nbscala patched scala runtime @see libs.local-->
         <sbt.version>0.13.1</sbt.version>
@@ -137,7 +137,7 @@
                     <!-- https://github.com/mojohaus/nbm-maven-plugin -->
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>nbm-maven-plugin</artifactId>
-                    <version>3.14.1</version>
+                    <version>4.1</version>
                     <extensions>true</extensions>
                     <configuration>
                         <brandingToken>${brandingToken}</brandingToken>
@@ -845,11 +845,11 @@
                 <artifactId>org-netbeans-modules-java-platform-ui</artifactId>
                 <version>${netbeans.version}</version>
             </dependency>
-            <dependency>
+<!--            <dependency>
                 <groupId>org.netbeans.api</groupId>
                 <artifactId>org-jdesktop-layout</artifactId>
                 <version>${netbeans.version}</version>
-            </dependency>
+            </dependency>-->
             <dependency>
                 <groupId>org.netbeans.api</groupId>
                 <artifactId>org-netbeans-core-multiview</artifactId>

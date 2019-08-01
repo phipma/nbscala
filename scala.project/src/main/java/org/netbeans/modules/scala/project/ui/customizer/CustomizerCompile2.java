@@ -47,9 +47,9 @@ import org.openide.util.HelpCtx;
 import javax.swing.GroupLayout;
 import javax.swing.LayoutStyle;
 
-public class CustomizerCompile extends JPanel implements HelpCtx.Provider {
+public class CustomizerCompile2 extends JPanel implements HelpCtx.Provider {
 
-    public CustomizerCompile( J2SEProjectProperties uiProperties ) {
+    public CustomizerCompile2( J2SEProjectProperties uiProperties ) {
         initComponents();
 
         uiProperties.SCALAC_DEPRECATION_MODEL.setMnemonic( deprecationCheckBox.getMnemonic() );
@@ -68,7 +68,7 @@ public class CustomizerCompile extends JPanel implements HelpCtx.Provider {
     }
 
     public HelpCtx getHelpCtx() {
-        return new HelpCtx( CustomizerCompile.class );
+        return new HelpCtx( CustomizerCompile2.class );
     }
 
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -82,18 +82,18 @@ public class CustomizerCompile extends JPanel implements HelpCtx.Provider {
         additionalJavacParamsExample = new javax.swing.JLabel();
         uncheckedCheckBox = new javax.swing.JCheckBox();
 
-        org.openide.awt.Mnemonics.setLocalizedText(debugInfoCheckBox, org.openide.util.NbBundle.getMessage(CustomizerCompile.class, "LBL_CustomizeCompile_Compiler_DebugInfo_JCheckBox")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(debugInfoCheckBox, org.openide.util.NbBundle.getMessage(CustomizerCompile2.class, "LBL_CustomizeCompile_Compiler_DebugInfo_JCheckBox")); // NOI18N
 
-        org.openide.awt.Mnemonics.setLocalizedText(deprecationCheckBox, org.openide.util.NbBundle.getBundle(CustomizerCompile.class).getString("LBL_CustomizeCompile_Compiler_Deprecation_JCheckBox")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(deprecationCheckBox, org.openide.util.NbBundle.getBundle(CustomizerCompile2.class).getString("LBL_CustomizeCompile_Compiler_Deprecation_JCheckBox")); // NOI18N
 
-        org.openide.awt.Mnemonics.setLocalizedText(doDependCheckBox, org.openide.util.NbBundle.getMessage(CustomizerCompile.class, "CustomizerCompile.doDependCheckBox")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(doDependCheckBox, org.openide.util.NbBundle.getMessage(CustomizerCompile2.class, "CustomizerCompile.doDependCheckBox")); // NOI18N
 
         additionalJavacParamsLabel.setLabelFor(additionalJavacParamsField);
-        org.openide.awt.Mnemonics.setLocalizedText(additionalJavacParamsLabel, org.openide.util.NbBundle.getMessage(CustomizerCompile.class, "LBL_AdditionalCompilerOptions")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(additionalJavacParamsLabel, org.openide.util.NbBundle.getMessage(CustomizerCompile2.class, "LBL_AdditionalCompilerOptions")); // NOI18N
 
-        org.openide.awt.Mnemonics.setLocalizedText(additionalJavacParamsExample, org.openide.util.NbBundle.getMessage(CustomizerCompile.class, "LBL_AdditionalCompilerOptionsExample")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(additionalJavacParamsExample, org.openide.util.NbBundle.getMessage(CustomizerCompile2.class, "LBL_AdditionalCompilerOptionsExample")); // NOI18N
 
-        org.openide.awt.Mnemonics.setLocalizedText(uncheckedCheckBox, org.openide.util.NbBundle.getBundle(CustomizerCompile.class).getString("LBL_CustomizeCompile_Compiler_Unchecked_JCheckBox")); // NOI18N
+        org.openide.awt.Mnemonics.setLocalizedText(uncheckedCheckBox, org.openide.util.NbBundle.getBundle(CustomizerCompile2.class).getString("LBL_CustomizeCompile_Compiler_Unchecked_JCheckBox")); // NOI18N
         uncheckedCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 uncheckedCheckBoxActionPerformed(evt);
@@ -138,9 +138,9 @@ public class CustomizerCompile extends JPanel implements HelpCtx.Provider {
                 .addGap(331, 331, 331))
         );
 
-        debugInfoCheckBox.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getMessage(CustomizerCompile.class, "ACSD_CustomizerCompile_jCheckBoxDebugInfo")); // NOI18N
-        deprecationCheckBox.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getMessage(CustomizerCompile.class, "ACSD_CustomizerCompile_jCheckBoxDeprecation")); // NOI18N
-        doDependCheckBox.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getMessage(CustomizerCompile.class, "ACSD_doDependCheckBox")); // NOI18N
+        debugInfoCheckBox.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getMessage(CustomizerCompile2.class, "ACSD_CustomizerCompile_jCheckBoxDebugInfo")); // NOI18N
+        deprecationCheckBox.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getMessage(CustomizerCompile2.class, "ACSD_CustomizerCompile_jCheckBoxDeprecation")); // NOI18N
+        doDependCheckBox.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getMessage(CustomizerCompile2.class, "ACSD_doDependCheckBox")); // NOI18N
         additionalJavacParamsField.getAccessibleContext().setAccessibleDescription(org.openide.util.NbBundle.getMessage (CustomizerCompile.class,"AD_AdditionalCompilerOptions"));
     }// </editor-fold>//GEN-END:initComponents
 
