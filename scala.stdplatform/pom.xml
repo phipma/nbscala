@@ -5,8 +5,9 @@
     <parent>
         <groupId>org.netbeans.modules</groupId>
         <artifactId>nbscala</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
+        <version>11.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+   </parent>
 
     <artifactId>org-netbeans-modules-scala-stdplatform</artifactId>
     <version>${scala.stdplatform.version}</version>

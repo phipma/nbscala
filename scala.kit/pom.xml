@@ -5,7 +5,8 @@
     <parent>
         <groupId>org.netbeans.modules</groupId>
         <artifactId>nbscala</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>11.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>org-netbeans-application-scala</artifactId>
@@ -124,6 +125,11 @@
         </dependency>
         <dependency>
             <groupId>org.netbeans.cluster</groupId>
+            <artifactId>webcommon</artifactId>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.cluster</groupId>
             <artifactId>java</artifactId>
             <type>pom</type>
         </dependency>
@@ -136,6 +142,13 @@
             <groupId>org.netbeans.cluster</groupId>
             <artifactId>ide</artifactId>
             <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
+            <artifactId>nbjavac</artifactId>
+            <version>1.0</version>
+            <type>nbm</type>
+            <scope>provided</scope>
         </dependency>
 
         <!-- netbeans modules development kit -->
