@@ -255,8 +255,9 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
+                <groupId>org.apache.netbeans.utilities</groupId>
                 <artifactId>nbm-maven-plugin</artifactId>
+                <version>4.2</version>
                 <extensions>true</extensions>
                 <configuration>
                     <author>Caoyuan Deng</author>

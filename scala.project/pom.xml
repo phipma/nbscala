@@ -202,6 +202,10 @@
             <artifactId>swing-layout</artifactId>
             <version>1.0.3</version>
         </dependency>-->
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-modules-project-libraries-ui</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
@@ -211,7 +215,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
+                <groupId>org.apache.netbeans.utilities</groupId>
                 <artifactId>nbm-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <configuration>
